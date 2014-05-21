@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".HW3" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/description"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/mapButton"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/openGal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/openGal"
+        android:layout_marginTop="17dp"
+        android:text="Open Map" />
+
+    <Button
+        android:id="@+id/openGal"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/openCam"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/photoGal" />
+
+    <Button
+        android:id="@+id/openCam"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="111dp"
+        android:text="@string/openCam" />
+
+</RelativeLayout>
